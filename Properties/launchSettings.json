@@ -1,21 +1,25 @@
-﻿{
-  "$schema": "http://json.schemastore.org/launchsettings.json",
+{
   "iisSettings": {
-    "windowsAuthentication": false, 
-    "anonymousAuthentication": true, 
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
     "iisExpress": {
       "applicationUrl": "http://localhost:64329",
       "sslPort": 44307
     }
   },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
   "profiles": {
-	"Iot.WebApi": {
-		"commandName": "Project",
-		"launchBrowser": false,
-		"applicationUrl": "https://localhost:5001;http://localhost:5000",
-		"environmentVariables": {
-			"ASPNETCORE_ENVIRONMENT": "Production"
-		}
-	}
+    "Iot.WebApi": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
+      },
+      "applicationUrl": "http://localhost:5000"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}"
+    }
   }
 }

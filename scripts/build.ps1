@@ -37,6 +37,5 @@ Write-Host "Generate zip artifact" -ForegroundColor Green
 Compress-Archive -Path $pathToCompress -CompressionLevel Fastest -DestinationPath "compressed"
 Push-AppveyorArtifact "compressed.zip" -FileName $compressedArtifactName
 
-
 # Done
 Write-Host "Done!" -ForegroundColor Green
