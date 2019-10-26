@@ -5,4 +5,4 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-ENTRYPOINT ["dotnet", "Iot.WebAPI.dll"]
+ENTRYPOINT ["dotnet", "Iot.WebApi.dll"]
